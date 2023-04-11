@@ -9,6 +9,17 @@ import Welcome from './Welcome.vue'
 export default{
   name:'login',
   components:{Welcome},
+  mounted() {
+    this.$request({
+      method:'get',
+      url:'/login',
+      data:{
+        name:'jack'
+      }
+    }).then((res)=>{
+      console.log("3333",res);
+    })
+  },
   methods: {
     goHome(){
       this.$router.push('welcome')

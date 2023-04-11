@@ -4,15 +4,15 @@ const env =
 const EnvConfig = {
     dev: {
         baseApi: '/',
-        mockApi: ''
+        mockApi: 'https://www.fastmock.site/mock/575faf997ed87794a60b0b5a126aeb56/api'
     },
     test: {
         baseApi: '//test.future.com/api',
-        mockApi: ''
+        mockApi: 'https://www.fastmock.site/mock/575faf997ed87794a60b0b5a126aeb56/api'
     },
     prod: {
         baseApi: '//future.com/api',
-        mockApi: ''
+        mockApi: 'https://www.fastmock.site/mock/575faf997ed87794a60b0b5a126aeb56/api'
     },
 }
 export default {
